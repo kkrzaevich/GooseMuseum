@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goose museum</title>
+    <script src="https://kit.fontawesome.com/632ed55f0a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&family=Jost:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="main-picture">
+            <img src="images/main.PNG" class="main-picture-img" alt="this is how the goose museum looks">
+        </div>
+
+
+
+        <div class="navbar-navbar">
+            <ul>
+                <li><a href="#" class="navbar-navbar-link">Купить билеты.</a></li>
+                <li><a href="#" class="navbar-navbar-link">Экскурсии.</a></li>
+                <li><a href="#" class="navbar-navbar-link">Как добраться.</a></li>
+                <li><a href="#" class="navbar-navbar-link">Выставки.</a></li>
+            </ul>
+        </div>
+
+        <div class="navbar-writing">
+            <h1>Добро пожаловать в музей гусей.</h1>
+        </div>
+
+        <div class="description-text">
+            <p class="description-text-text1">Лучшие гуси со всех уголков мира.
+                Гуси всех цветов, размеров и настроений. Говорящие, молчаливые, летящие,
+                лежащие. Они все здесь.
+            </p>
+            <p class="description-text-text2">Бесплатно, без регистрации и смс.</p>
+        </div>
+
+        <div class="description-picture">
+            <img src="images/funny-goose.svg" class="description-picture-img" alt="wow, what a nice goose!">
+        </div>
+
+        <div class="carousel-left">
+            <button class="carousel-button" onclick="image_swap_left()"><i
+                    class="carousel-left-arrow fa-sharp fa-solid fa-arrow-left"></i></button>
+        </div>
+
+        <div class="carousel-center" id="carousel-center">
+            <button class="carousel-center-button-left" onclick="image_swap_left()"><i
+                    class="carousel-left-arrow fa-sharp fa-solid fa-arrow-left"></i></button>
+            <img src="images/carousel-goose1.png" class="carousel-center-img" alt="cute goose" id="carousel-center-img1"
+                style="object-position: center center">
+            <img src="images/carousel-goose2.png" class="carousel-center-img-hidden" alt="cute goose"
+                id="carousel-center-img2" style="object-position: 50% 20%">
+            <img src="images/carousel-goose3.png" class="carousel-center-img-hidden" alt="cute goose"
+                id="carousel-center-img3" style="object-position: 50% 25%">
+            <button class="carousel-center-button-right" onclick="image_swap_right()"><i
+                    class="carousel-right-arrow fa-sharp fa-solid fa-arrow-right"></i></button>
+        </div>
+
+        <div class="carousel-right">
+            <button class="carousel-button" onclick="image_swap_right()"><i
+                    class="carousel-right-arrow fa-sharp fa-solid fa-arrow-right"></i></button>
+        </div>
+
+        <div class="carousel-bottom-left">
+        </div>
+
+        <div class="carousel-bottom-center">
+            <p class="carousel-center-text" id="carousel-center-text1">Анатолий, 13 лет, Душанбе.</p>
+            <p class="carousel-center-text-hidden" id="carousel-center-text2">Пётр, 1 год, Куала-Лумпур.</p>
+            <p class="carousel-center-text-hidden" id="carousel-center-text3">Сергей, 33 года, Красногорск.</p>
+        </div>
+
+        <div class="carousel-bottom-right">
+        </div>
+
+
+
+        <div class="social-left">
+            <p class="social-left-text">Мы в соцсетях.</p>
+            <a href="#"><i class="social-left-icon fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="social-left-icon fa-brands fa-google-plus-g"></i></a>
+            <a href="#"><i class="social-left-icon fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="social-left-icon fa-brands fa-vk"></i></a>
+            <a href="#"><i class="social-left-icon fa-brands fa-wikipedia-w"></i></a>
+        </div>
+        <div class="social-right">
+
+        </div>
+
+
+
+        <div class="coordinates-left">
+            <p class="coordinates-left-text">Часы работы:</p>
+            <table class="coordinates-left-table">
+                <tr>
+                    <td class="coordinates-left-td">ПН</td>
+                    <td class="coordinates-left-td">ВТ</td>
+                    <td class="coordinates-left-td">СР</td>
+                    <td class="coordinates-left-td">ЧТ</td>
+                    <td class="coordinates-left-td">ПТ</td>
+                    <td class="coordinates-left-td">СБ</td>
+                    <td class="coordinates-left-td">ВС</td>
+                </tr>
+                <tr>
+                    <td class="coordinates-left-td">вых.</td>
+                    <td class="coordinates-left-td">11-12</td>
+                    <td class="coordinates-left-td">12-13</td>
+                    <td class="coordinates-left-td">13-14</td>
+                    <td class="coordinates-left-td">14-15</td>
+                    <td class="coordinates-left-td">16-17</td>
+                    <td class="coordinates-left-td">17-18</td>
+                </tr>
+            </table>
+        </div>
+        <div class="coordinates-right">
+            <p class="coordinates-right-text">Адрес:</p>
+            <p class="coordinates-right-text-italic">г. Гусь-Хрустальный, ул. Гусева, д. 27.</p>
+        </div>
+
+
+
+        <div class="copyright-left">
+            <p class="copyright-left-text">&copy Музей гусей 2022</p>
+        </div>
+        <div class="copyright-right">
+
+        </div>
+
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
